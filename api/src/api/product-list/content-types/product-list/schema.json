@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "product_lists",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "product"
+    "singularName": "product-list",
+    "pluralName": "product-lists",
+    "displayName": "product_list"
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +17,7 @@
     "price": {
       "type": "decimal"
     },
-    "description": {
+    "descriptions": {
       "type": "text"
     },
     "image": {
@@ -29,6 +29,16 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "multi_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
